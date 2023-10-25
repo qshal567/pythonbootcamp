@@ -1,0 +1,151 @@
+# VARIABLES IN THE DATA TYPES
+
+    # print("There once was a man called Jhon.")
+# print("he was a 70 years old.")
+# print("He really liked the name Jhon,")
+# print("but didn't like being 70.")
+
+    # HOW TO CHANGE THE NAME IN THE VARIABLES
+
+# Character_name = "kushal"
+# Character_age = "40"
+# print( "There once was a man called " + Character_name + ", ")
+# print("he was a " + Character_age + " years old.")
+# print("he really liked the name jhon")
+
+    # WORKING WITH STRINGS IN PYTHON
+# print("Giraffe academy")
+# print("Giraffe\nacademy")
+# print("Apple\bacademy")
+# print(("kushal/thapa"))
+# print("kushal\"thapa")
+
+# phrase = "apple academy"
+# print(phrase)
+
+    # CONCENTINATION
+# phrase = "apple academy"
+# print(phrase + "is the best academy" + ",")
+# print(phrase.upper())
+# print(phrase.lower().isupper())
+# print(len(phrase))
+# print(phrase[0])
+# print(phrase.index("a"))
+# print(phrase.index("demy"))
+# print(phrase.replace("apple", "orange"))
+
+    # WORKING WITH NUMBERS IN PYTHON
+# print(5)
+# print(2.05)
+# print(-879)
+# print(3+5)
+# print(5-2)
+# print(5*5)
+# print(5*4+5)
+# print(5*(4+5))
+
+    # CREATING VARIABLES IN NUMBERS
+# my_num = 5
+# print(my_num)
+
+    # CONVERTING THE NUMBERS INTO THE STRINGS
+# my_num = 5
+# # print (str(my_num) + " is my favourite number.")
+
+    # ABSOLUTE VALUE FUNCTION (ABS)
+# my_num = -78
+# print(abs(my_num))
+
+     # POW FUNCTION
+# my_num = 5
+# # print(pow(my_num, 2))
+# print(pow(5,2))
+# print(max(5,8))
+# print(min(5,9))
+# print(round(5.6))
+
+    # from math import *
+
+# my_name = 5
+# print(floor(3.9))
+# print(sqrt(25))
+
+    # GETTING INPUT FROM THE USERS
+
+# some of examples
+# name = input("what is your name: ")
+# print("my name is " + name)
+# adress = input("where do you live ? :")
+# print("I live in " + adress)
+# print("I love this  place show much, " + adress + " is  best  place to live in the united states")
+# school = input("which school do you study? : ")
+# print("this " + school + " is best for eduction in chitwan.")
+# grade = input("what is your grade in school : ")
+# print("my grade is " + grade + " in school ")
+
+
+    #BUILDING A BASIC CALCULATOR IN THE PYTHON
+# num1 = input("enter a number : ")
+# num2 = input("enter a another number : ")
+# result = int(num1) + int(num2)
+# print(result)
+
+# num1 = input("enter a number : ")
+# num2 = input(" enter the another number : ")
+# result = float(num1) + float(num2)
+# print(result)
+
+    # MADS LIBS GAME IN PYTHON
+
+# plural_noun = input("enter any noun : ")
+# colors = input("enter any colors : " )
+# famous_man = input (" any famous person : ")
+# print("Roses are " + colors)
+# print( plural_noun + " are blue" )
+# print("I love " + famous_man )
+
+    # LIST IN PYTHON
+
+# friends = ["Sujan", "Vicky", "Ameer","bhim" ]
+
+# print(friends[0])
+# print(friends[1])
+# print(friends[2])
+# # or
+# print(friends[-1])
+# print(friends[1:])
+# print(friends[0:])
+# print(friends[0:3])
+ 
+#  MODIFYING VALUES INSIDE OF THE LIST
+# friends[3]= "frank"
+# print(friends[3])
+
+# USING LIST FUNCTION
+
+Lucky_numbers = [15, 5000, 12, 13 , 14 , 45, 56, 645]
+friends = ["Ram", "Sita", "Hari", "Dines", "Hari", "Manoj"]
+
+# # friends.extend(Lucky_numbers)
+# friends.append("Prakash")
+# friends.insert(1, "james")
+# friends.remove("Ram")
+# friends.clear()
+# friends.pop()
+# print(friends.index("Hari"))
+# # print(friends.count("Hari"))
+# friends.sort()
+# Lucky_numbers.sort()
+# print(friends)
+# print(Lucky_numbers)
+# Lucky_numbers.reverse()
+# print(Lucky_numbers)
+
+# friends2 = friends.copy()
+# print(friends2)
+
+# TUPLES IN A A PYTHON
+        # = it's basically a structure where can store a  multiple piece of information.abs and tuble is unmutable
+
+coordinates = (4,5)
+print(coordinates[0])

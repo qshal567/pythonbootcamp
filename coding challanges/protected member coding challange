@@ -1,0 +1,47 @@
+class Company:
+    #
+    def __init__(self, name, location, revenue, profit):
+        self.Name = name  
+        self.Location = location  
+        self.__Revenue = revenue  
+        self.__Profit = profit  
+
+
+    def get_revenue(self):
+        return self.__Revenue
+
+    def get_profit(self):
+        return self.__Profit
+
+
+class Employee(Company):
+
+    def __init__(self, name, location, salary, bank_account_number):
+        super().__init__(name, location, 0, 0)  
+        self.__BankAccountNumber = bank_account_number  
+        self.Salary = salary
+ 
+    def get_bank_account_number(self):
+        return self.__BankAccountNumber
+
+
+my_company = Company("Everest", "Kathmandu", 1000000, 50000)
+
+
+my_employee = Employee("laxmi Thapa", "Kathmandu", 60000, "12345")
+
+
+print("Company Name:", my_company.Name)
+print("Company Location:", my_company.Location)
+print("Employee Name:", my_employee.Name)
+print("Employee Location:", my_employee.Location)
+
+
+print("Company Revenue:", my_company.get_revenue())
+print("Company Profit:", my_company.get_profit())
+print("Employee Salary:", my_employee.Salary)
+print("Employee Bank Account Number:", my_employee.get_bank_account_number())
+
+
+
+

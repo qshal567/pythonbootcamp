@@ -1,0 +1,3 @@
+file = open("Textfile.py", "r")
+print(file.read())
+f.close()

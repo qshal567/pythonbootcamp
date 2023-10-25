@@ -1,0 +1,40 @@
+
+
+import random
+
+def get_computer_choice():
+    return random.randint(0, 2)
+
+def get_user_choice():
+    print("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors")
+    user_choice = int(input())
+    return user_choice
+
+def print_choice(choice):
+    if choice == 0:
+        print("Rock")
+    elif choice == 1:
+        print("Paper")
+    elif choice == 2:
+        print("Scissors")
+
+def determine_winner(user, computer):
+    if user == computer:
+        return "It's a tie"
+    elif (user == 0 and computer == 2) or (user == 1 and computer == 0) or (user == 2 and computer == 1):
+        return "You win"
+    else:
+        return "Computer wins"
+
+user_choice = get_user_choice()
+computer_choice = get_computer_choice()
+
+print("Computer chooses:")
+print_choice(computer_choice)
+
+print("You choose:")
+print_choice(user_choice)
+
+
+
+      

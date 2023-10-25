@@ -1,0 +1,55 @@
+import random
+
+data = [
+    {
+        'name': 'Instagram',
+        'follower_count': 346,
+        'description': 'Social media platform',
+        'country': 'United States'
+    },
+]
+
+def pick_random_option(data):
+    return random.choice(data)
+
+def print_option(option):
+    name = option['name']
+    description = option['description']
+    country = option['country']
+    print(f"Name: {name}")
+    print(f"Description: {description}")
+    print(f"Country: {country}")
+
+def is_higher(a, b):
+    return a['follower_count'] > b['follower_count']
+
+score = 0
+
+while True:
+    option_A = pick_random_option(data)
+    option_B = pick_random_option(data)
+
+    print("Welcome to the Higher or Lower game!")
+    print("Compare the number of followers between two options:")
+    print_option(option_A)
+    print("VS")
+    print_option(option_B)
+
+    user_guess = input("Who has more followers? Type 'A' or 'B': ").lower()
+
+    if is_higher(option_A, option_B) and user_guess == 'a':
+        print("Correct! A has more followers.")
+        score += 1
+    elif not is_higher(option_A, option_B) and user_guess == 'b':
+        print("Correct! B has more followers.")
+        score += 1
+    else:
+        print("Incorrect. Game Over!")
+        print(f"Your final score is: {score}")
+        break
+
+    print(f"Your current score: {score}\n")
+
+
+
+
