@@ -1,0 +1,64 @@
+
+        # Create an abstract class BankTransaction and implementing subclasses SavingsAccount and CheckingAccount to perform deposit and withdrawal transactions. 
+
+from abc import ABC, abstractmethod
+
+class BankTransaction(ABC):
+    def __init__(self, Bank_account_number, balance):
+        self.balance = balance
+        self.Bank_account_number = Bank_account_number
+    @abstractmethod    
+    def deposit(self, amount):
+        pass
+
+    @abstractmethod
+    def withdraw(self, amount):
+        pass
+
+    def get_balance(self):
+        return self.balance
+
+    def get_Bank_account_number(self):
+        return self.Bank_account_number    
+
+class SavingAccount(BankTransaction):
+    def deposit(self,amount):
+        if amount > 0:
+            self.balance += amount
+
+
+    def withdraw(self, amount):
+        if amount > 0 and amount <= self.balance:
+            self.balance -= amount
+        else:
+            print("sorry kushal, you don't have sufficent balance in your account.")
+        
+            
+
+saving_account = SavingAccount("Ny012345", 5000)
+saving_account.deposit(1000)
+saving_account.withdraw(3000)
+
+print("saving Bank account number: " , saving_account.get_Bank_account_number())
+print("kushal Thapa savingn account money :", saving_account.get_balance())
+
+
+class CheckingAccount(BankTransaction):
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount
+
+    def withdraw(self, amount):
+        if amount > 0 and amount <= self.balance:
+            self.balance -= amount        
+        else:
+            print("sorry kushal, you don't have sufficent balance in your account.")    
+
+checking_account = CheckingAccount("Ny012345", 20000)
+checking_account.deposit(3000)            
+checking_account.withdraw(200)
+
+print("Checking Bank account number :" , checking_account.get_Bank_account_number())
+print("Kushal Thapa checking account money :" , checking_account.get_balance())
+
+print("Thank you for using Bank of America.")
