@@ -1,3 +1,0 @@
-file = open("Textfile.py" , "r")
-print(file.readline())
-file.close()

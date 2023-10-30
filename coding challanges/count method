@@ -1,4 +1,0 @@
-fruits = ("apple", "cherry", "date", "elderberry", "apple", "banana")
-apple_count = fruits.count ("apple")
-print("The number of times 'apple' appears:", apple_count)
-

@@ -1,4 +1,0 @@
-cities = ["Newy york", "London", "Pokhara","Delhi","kathmandu"]
-for index, city in enumerate(cities):
-    print("index:", index, "City:", city)
-
